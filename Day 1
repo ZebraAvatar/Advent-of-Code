@@ -5,7 +5,7 @@ from functools import reduce
 
 start_time = time.time()
 
-expenses = open('C:\\Users\\peter\\Downloads\\Advent of Code\\Day 1\\input.txt', 'r')
+expenses = open('input.txt', 'r')
 data = expenses.readlines()
 
 for i in range(len(data)):
