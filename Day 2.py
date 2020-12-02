@@ -4,7 +4,7 @@ import time
 
 start_time = time.time()
 
-file = open('C:\\Users\\peter\\Downloads\\Advent of Code\\Day 2\\input.txt', 'r')
+file = open('input.txt', 'r')
 data = file.read().splitlines()
 
 data = [part.split(" ") for part in data]
