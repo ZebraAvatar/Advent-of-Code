@@ -3,7 +3,7 @@ from functools import reduce
 
 start_time = time.time()
 
-with open('input.txt') as f:
+with open('./Windows/Day 6/input.txt') as f:
     data = f.read().split('\n\n')
     f.close()
 
@@ -35,4 +35,6 @@ for i in adata:
     groupCounts.append(len(list(reduce(set.intersection, [set(item) for item in i ]))))
 
 total = sum(groupCounts)
-print("Part two solutionL ", total)
+print("Part two solution: ", total)
+
+print(f"Time taken: {(time.time() - start_time):.5} seconds")
